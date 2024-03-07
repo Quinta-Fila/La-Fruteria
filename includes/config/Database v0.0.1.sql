@@ -18,6 +18,9 @@
 --
 -- Table structure for table `order_details`
 --
+CREATE DATABASE IF NOT EXISTS fruteria;
+
+USE fruteria;
 
 DROP TABLE IF EXISTS `order_details`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -69,7 +72,11 @@ CREATE TABLE `pedidos` (
 
 LOCK TABLES `pedidos` WRITE;
 /*!40000 ALTER TABLE `pedidos` DISABLE KEYS */;
-INSERT INTO `pedidos` VALUES (1,6,'1',10.00,NULL),(2,1,'1',1.00,'2024-03-06'),(3,1,'1',1.00,'2024-03-06'),(4,1,NULL,0.40,'2024-03-06'),(5,1,NULL,2.60,'2024-03-06');
+INSERT INTO `pedidos` VALUES (1,6,'1',10.00,NULL),
+(2,1,'1',1.00,'2024-03-06'),
+(3,1,'1',1.00,'2024-03-06'),
+(4,1,NULL,0.40,'2024-03-06'),
+(5,1,NULL,2.60,'2024-03-06');
 /*!40000 ALTER TABLE `pedidos` ENABLE KEYS */;
 UNLOCK TABLES;
 
