@@ -27,18 +27,16 @@
       <nav class="nav-bar">
         <ul>
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="/templates/contact.html">Acerca de</a></li>
-          <li><a href="/templates/aboutUs.html">Contacto</a></li>
+          <li><a href="/templates/contact.php">Acerca de</a></li>
+          <li><a href="/templates/aboutUs.php">Contacto</a></li>
         </ul>
       </nav>
+      <a id="dark-mode-toggle" class="dark-mode"><i class="fa-solid fa-moon fa-2xl"></i></a>
     </div>
   </header>
 
   <section class="wrap-1 hero">
     <div class="hero-body">
-      <button id="dark-mode-toggle">
-          <img src="/assets/imgs/night-mode.png" alt="Dark Mode">
-      </button>
       <h1>Rincón Fruticola <br>La Quinta Fila</h1>
       <p>
         Tenemos muchas frutas o eso creemos. A veces nos roban los ratones
@@ -48,10 +46,10 @@
   </section>
 
   <section class="wrap-2">
-    <h1>Tu tiendina de confianza para una alimentación saludable</h1>
+    <h1>Tu tiendina de confianza para una alimentacion saludable</h1>
     <div class="container">
       <article class="container-info">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" width="7rem" height="7rem">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" width="6rem" height="6rem">
           <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
         </svg>
         <div>
@@ -60,7 +58,7 @@
         </div>
       </article>
       <article class="container-info">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" width="7rem" height="7rem">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" width="6rem" height="6rem">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
         </svg>
         <div>
@@ -74,7 +72,7 @@
   <section class="wrap-2">
     <h1>Productos</h1>
     <div class="products-grid">
-      <article>
+      <article class="card" >
         <img src="./assets/imgs/product.png" alt="">
         <div class="card-body">
           <h2>Fresas</h2>
@@ -84,7 +82,7 @@
           <button>Añadir</button>
         </div>
       </article>
-      <article>
+      <article class="card">
         <img src="./assets/imgs/product2.png" alt="">
         <div class="card-body">
           <h2>Lechuga</h2>
@@ -94,7 +92,7 @@
           <button>Añadir</button>
         </div>
       </article>
-      <article>
+      <article class="card">
         <img src="./assets/imgs/product3.png" alt="">
         <div class="card-body">
           <h2>Alcachofas</h2>
@@ -104,7 +102,7 @@
           <button>Añadir</button>
         </div>
       </article>
-      <article>
+      <article class="card">
         <img src="./assets/imgs/product4.png" alt="">
         <div class="card-body">
           <h2>Piña</h2>
@@ -114,7 +112,7 @@
           <button>Añadir</button>
         </div>
       </article>
-      <article>
+      <article class="card">
         <img src="./assets/imgs/product5.png" alt="">
         <div class="card-body">
           <h2>Manzana</h2>
@@ -124,7 +122,7 @@
           <button>Añadir</button>
         </div>
       </article>
-      <article>
+      <article class="card">
         <img src="./assets/imgs/product6.png" alt="">
         <div class="card-body">
           <h2>Aguacate</h2>
@@ -134,7 +132,7 @@
           <button>Añadir</button>
         </div>
       </article>
-      <article>
+      <article class="card">
         <img src="./assets/imgs/product7.png" alt="">
         <div class="card-body">
           <h2>Melón</h2>
@@ -144,7 +142,7 @@
           <button>Añadir</button>
         </div>
       </article>
-      <article>
+      <article class="card">
         <img src="./assets/imgs/product10.png" alt="">
         <div class="card-body">
           <h2>Arándanos</h2>
@@ -154,7 +152,7 @@
           <button>Añadir</button>
         </div>
       </article>
-      <article>
+      <article class="card">
         <img src="./assets/imgs/product9.png" alt="">
         <div class="card-body">
           <h2>Naranjas</h2>
@@ -164,7 +162,7 @@
           <button>Añadir</button>
         </div>
       </article>
-      <article>
+      <article class="card">
         <img src="./assets/imgs/product8.png" alt="">
         <div class="card-body">
           <h2>Plátanos</h2>
@@ -177,103 +175,99 @@
     </div>
 
     <!--Slider de artículos más vendidos-->
-    <section class="container">
-        <div class="card-container swiper">
-            <div class="card-content">
-                <div class="swiper-wrapper">
-                    <article class="card-article swiper-slide">
-                        <div class="card-image">
-                            <img src="assets/imgs/product.png" alt="image" class="card-img">
-                            <div class="card-shadow"></div>
-                        </div>
-                        <div class="card-body">
-                          <h2 class="card-name">Fresa</h2>
-                          <p class="card-price">8,90 <span class="card-span">€/kg</span></p>
-            
-                          <a href="#" class="card-button">Más Info</a>
-                        </div>
-                      </article>
-
-                      <article class="card-article swiper-slide">
-                        <div class="card-image">
-                            <img src="assets/imgs/product5.png" alt="image" class="card-img">
-                            <div class="card-shadow"></div>
-                        </div>
-                        <div class="card-body">
-                          <h2 class="card-name">Manzana</h2>
-                          <p class="card-price">2,90 <span class="card-span">€/kg</span></p>
-            
-                          <a href="#" class="card-button">Más Info</a>
-                        </div>
-                      </article>
-
-                      <article class="card-article swiper-slide">
-                        <div class="card-image">
-                            <img src="assets/imgs/product7.png" alt="image" class="card-img">
-                            <div class="card-shadow"></div>
-                        </div>
-                        <div class="card-body">
-                          <h2 class="card-name">Melón</h2>
-                          <p class="card-price">5,20 <span class="card-span">€/kg</span></p>
-            
-                          <a href="#" class="card-button">Más Info</a>
-                        </div>
-                      </article>
-
-                      <article class="card-article swiper-slide">
-                        <div class="card-image">
-                            <img src="assets/imgs/product10.png" alt="image" class="card-img">
-                            <div class="card-shadow"></div>
-                        </div>
-                        <div class="card-body">
-                          <h2 class="card-name">Arándano</h2>
-                          <p class="card-price">4,80 <span class="card-span">€/kg</span></p>
-            
-                          <a href="#" class="card-button">Más Info</a>
-                        </div>
-                      </article>
-
-                      <article class="card-article swiper-slide">
-                        <div class="card-image">
-                            <img src="assets/imgs/product8.png" alt="image" class="card-img">
-                            <div class="card-shadow"></div>
-                        </div>
-                        <div class="card-body">
-                          <h2 class="card-name">Plátano</h2>
-                          <p class="card-price">2,80 <span class="card-span">€/kg</span></p>
-            
-                          <a href="#" class="card-button">Más Info</a>
-                        </div>
-                      </article>
-                </div>
-            </div>
-            <div class="swiper-button-prev">
-                <img src="assets/imgs/arrow-left-s-line.svg" alt="arrowl">
-            </div>
-            <div class="swiper-button-next">
-                <img src="assets/imgs/arrow-right-s-line.svg" alt="arrowr">
-            </div>
-            <div class="swiper-pagination"></div>
+    <section class="wrap-2">
+    <h1>Productos mas vendidos</h1>
+      <div class="card-container swiper">
+        <div class="card-content">
+          <div class="swiper-wrapper">
+            <article class="card swiper-slide">
+              <img src="./assets/imgs/product9.png" alt="">
+              <div class="card-body">
+                <h2>Naranjas</h2>
+                <p>3,50 <span>€/kg</span></p>
+              </div>
+              <div class="card-footer">
+                <button>Añadir</button>
+              </div>
+            </article>
+            <article class="card swiper-slide">
+              <img src="./assets/imgs/product8.png" alt="">
+              <div class="card-body">
+                <h2>Plátanos</h2>
+                <p>2,80 <span>€/kg</span></p>
+              </div>
+              <div class="card-footer">
+                <button>Añadir</button>
+              </div>
+            </article>
+            <article class="card swiper-slide">
+              <img src="./assets/imgs/product7.png" alt="">
+              <div class="card-body">
+                <h2>Melón</h2>
+                <p>5,20 <span>€/kg</span></p>
+              </div>
+              <div class="card-footer">
+                <button>Añadir</button>
+              </div>
+            </article>
+            <article class="card swiper-slide">
+              <img src="./assets/imgs/product10.png" alt="">
+              <div class="card-body">
+                <h2>Arándanos</h2>
+                <p>4,80 <span>€/kg</span></p>
+              </div>
+              <div class="card-footer">
+                <button>Añadir</button>
+              </div>
+            </article>
+          </div>
         </div>
+        <div class="swiper-button-prev">
+          <img src="assets/imgs/arrow-left-s-line.svg" alt="arrowl">
+        </div>
+        <div class="swiper-button-next">
+          <img src="assets/imgs/arrow-right-s-line.svg" alt="arrowr">
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
+      
+      <button id="elevator" class="elevator">
+        <i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i>
+      </button>
 
-    <button id="elevator" class="elevator"><i class="fa-solid fa-arrow-up fa-xl" style="color: #6f7276;"></i></button>
+      <footer>
+        <div class="info-1">
+          <div>
+            <h3>Atención al cliente</h3>
+            <p>Preguntas Frecuentes</p>
+            <p>hola@contacto.es</p>
+            <p>985555555</p>
+          </div>
+          <div>
+            <h3>Conócenos</h3>
+            <p>Quiénes somos</p>
+            <p>Encuéntranos</p>
+            <p>Recetas</p>
+            <p>Trabaja con nosotros</p>
+          </div>
+          <div class="sm-container">
+            <h3>Síguenos</h3>
+            <p class="sm-icons">
+              <i class="fa-brands fa-instagram fa-2xl" style="color: #fafafa;"></i>
+              <i class="fa-brands fa-x-twitter fa-2xl" style="color: #fafafa;"></i>
+              <i class="fa-brands fa-youtube fa-2xl" style="color: #fafafa;"></i>
+            </p>
+          </div>
+        </div>
+        <div class="info-2">
+          <p>© 2024 - La Quinta Fila, todos los derechos reservados</p>
+        </div>
+      </footer>
 
-    <footer class="footer">
-      <div class="f1"><img src="/assets/imgs/logo.png" alt="Logo" class="logo">
-        <p>Ayudadnos, nuestro jefe nos tiene encerrados en un container debajo de una fábrica en Hanoi</p>
-      </div>
-      <div class="f2">Company <p>- About us <br> - FAQ <br>- Contact Us</p>
-      </div>
-      <div class="f3">News <p>- Kike me pega <br>- Testimonios <br>- Help</p>
-      </div>
-      <div class="f4">Socials <div><img src="/assets/imgs/xtiwt.png" alt="" class="logoF"><br><img src="/assets/imgs/facebook.png" alt="" class="logoF"><br><img src="/assets/imgs/instagram.png" alt="" class="logoF"></div>
-      </div>
-    </footer>
-
-    <script src="./scripts/swiper-bundle.min.js"></script>
-    <script src="./scripts/main.js"></script>
-    <script src="http//tholman.com/elevator.js/elevator.js"></script>
+      <script src="./scripts/swiper-bundle.min.js"></script>
+      <script src="./scripts/main.js"></script>
+      <script src="http//tholman.com/elevator.js/elevator.js"></script>
 </body>
 
 </html>
