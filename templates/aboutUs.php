@@ -4,8 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <title>Acerca de Nosotros</title>
-  <link rel="stylesheet" href="/la-fruteria-cate/styles/main.css" />
+  <link rel="stylesheet" href=".././styles/main.css" />
 </head>
 
 <body>
@@ -17,56 +20,97 @@
         </svg></a>
     </div>
     <div class="nav-list">
-      <button class="nav-btn" role="button"><i class="fa-solid fa-user fa-sm" style="color: #ffff;"></i>Log-In</button>
-      <nav class="nav-bar">
+      <a href="./login_register.php" class="nav-btn"><i class="fa-solid fa-user fa-sm" style="color: #ffff;"></i>Log-In</a>
+      <nav class="nav-bar" id="nav">
+        <a id="close-nav" class="close-menu"><i class="fa-solid fa-xmark"></i></a>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="/templates/contact.html">Contacto</a></li>
-          <li><a href="/templates/aboutUs.html">Acerca de nosotros</a></li>
+          <li><a href="../index.php">Inicio</a></li>
+          <li><a href="./aboutUs.php">Acerca de</a></li>
+          <li><a href="./contact.php">Contacto</a></li>
         </ul>
       </nav>
+      <a id="dark-mode-toggle" class="dark-mode"><i class="fa-solid fa-moon fa-2xl"></i></a>
+      <a class="open-menu" id="open-nav"><i class="fa-solid fa-bars fa-2xl"></i></a>
     </div>
   </header>
 
-  <section class="wrap4">
-    <h2 class="size-3rem">¿Tienes hambre? Nosotros también</h2>
-    <p>
-      Por eso a veces comemos nuestros productos de alta calidad, asi que si
-      no te llega el envío es porque se lo comío alguien
-    </p>
-    <ol class="list">
-      <li>
-        <p><span class="span-1">59% </span>de usuarios contentos</p>
-      </li>
-      <li>
-        <p>
-          <span class="span-1">150M+</span>
-          de ventas
-        </p>
-      </li>
-      <li>
-        <p>
-          <span class="span-1">100%</span>
-          fruta no contaminada (o eso creemos)
-        </p>
-      </li>
-      <li>
-        <p>
-          <span class="span-1">41%</span>
-          de reviews negativas son de sucios cárnivoros
-        </p>
-      </li>
-    </ol>
+  <main class="about">
+  <section class="about-section">
+    <img class="about-img" src=".././assets/imgs/banana.gif" alt="banana-gif" class="banana-gif">
+    <div class="about-div">
+      <h1 class="about-title">¿Tienes hambre? Nosotros tambien...</h1>
+      <p>Por eso a veces nos comemos nuestros productos de alta calidad, así que si no te llega el envío es porque se lo comió alguien</p>
+      <ul class="list">
+        <li>
+          <p>59% </span>de usuarios contentos</p>
+        </li>
+        <li>
+          <p>150M+</span>de ventas</p>
+        </li>
+        <li>
+          <p>100%</span>fruta no contaminada (o eso creemos)...</p>
+        </li>
+        <li>
+          <p>41% de reviews negativas son de sucios cárnivoros</p>
+        </li>
+      </ul>
+    </div>
   </section>
 
-  <section class="wrap5">
-    <h2>
-      <span class="green">Nuestra misión es</span> ganar dinero a tu cost.... <span class="green">Alimentarte y que estes
-        sano.</span>
-    </h2>
-    <p>Nos preocupamos por tu salud, asi que damos lo mejor de lo mejor de lo mejor de lo mejor de lo mejor de lo mejor de lo mejor de lo mejor de lo mejor de lo mejor (Ayuda por favor quiero vacaciones de 342 años, la vida de adulto es dura por este mundo capitalista que nos hace creer que trabajar y hacer dinero es hacer lo correcto y lo demás perder el tiempo pero yo solo quiero bailar en Bangkok 24/7).</p>
-  </section>
-  </div>
-</body>
+  <section class="about-section">
+    <div class="about-div">
+      <h1 class="about-title" >Nuestra misión es ganar dinero a tu cost.... Alimentarte y que estés sano.</h1>
+      <p>Nos preocupamos por tu salud, asi que damos lo mejor de lo mejor de lo mejor de lo mejor de lo mejor de lo mejor de lo mejor de lo mejor de lo mejor de lo mejor. <br/><span>(Ayuda por favor quiero vacaciones de 342 años, la vida de adulto es dura por este mundo capitalista que nos hace creer que trabajar y hacer dinero es hacer lo correcto y lo demás perder el tiempo pero yo solo quiero bailar en Bangkok 24/7)</span></p>
+    </div>
+    <img class="orange-img" src=".././assets/imgs/rodaja-de-naranja.png" alt="" width="200">
+</section>
+</main>
 
+<footer>
+        <div class="info-1">
+          <div>
+            <h3>Atención al cliente</h3>
+            <p>Preguntas Frecuentes</p>
+            <p>hola@contacto.es</p>
+            <p>985555555</p>
+          </div>
+          <div>
+            <h3>Conócenos</h3>
+            <p>Quiénes somos</p>
+            <p>Encuéntranos</p>
+            <p>Recetas</p>
+            <p>Trabaja con nosotros</p>
+          </div>
+          <div class="sm-container">
+            <h3>Síguenos</h3>
+            <p class="sm-icons">
+              <i class="fa-brands fa-instagram fa-2xl" style="color: #fafafa;"></i>
+              <i class="fa-brands fa-x-twitter fa-2xl" style="color: #fafafa;"></i>
+              <i class="fa-brands fa-youtube fa-2xl" style="color: #fafafa;"></i>
+            </p>
+          </div>
+        </div>
+        <div class="info-2">
+          <p>© 2024 - La Quinta Fila, todos los derechos reservados</p>
+        </div>
+      </footer>
+
+  <script>
+        const nav = document.getElementById("nav");
+        const openBtn = document.getElementById("open-nav");
+        const closeBtn = document.getElementById("close-nav");
+
+        const toggleMenu = () => {
+          nav.classList.toggle("visible");
+        };
+
+        window.addEventListener("scroll", () => {
+          const scrollPosition = window.scrollY;
+          if (scrollPosition > 0) nav.classList.remove("visible");
+        });
+
+        openBtn.addEventListener("click", toggleMenu);
+        closeBtn.addEventListener("click", toggleMenu);
+      </script>
+  </body>
 </html>
