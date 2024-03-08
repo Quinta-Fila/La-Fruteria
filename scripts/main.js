@@ -1,3 +1,4 @@
+/*
 window.onload = () => {
   // Variables
   const images = [
@@ -76,6 +77,8 @@ window.onload = () => {
   // Iniciar
   showImage();
 };
+*/
+
 
 /*!
  * Elevator.js
@@ -351,11 +354,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const elevator = new Elevator({
     element: document.getElementById("elevator"),
   });
+  elevator.elevate();
 });
 
-elevator.elevate();
 
-// Función para cambiar a modo oscuro
-document.getElementById('dark-mode-toggle').addEventListener('click', function() {
-  document.body.classList.toggle('dark-mode');
-});
+
+
+

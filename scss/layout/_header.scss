@@ -1,19 +1,20 @@
 @use './../base/variables' as v;
 
 header {
-    min-height: 10vh;
+    min-height: 15vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
+    box-shadow: 0 3px 4px rgba(221, 221, 221, 0.836);
     padding: 1rem 3rem;
-}
 
-.nav-list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    .nav-list{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2.5rem;
+    }
 }
 
 .nav-btn {
@@ -31,21 +32,16 @@ header {
     gap: .6rem;
     align-items: center;
     transition: all .5s ease-in-out;
-
-    a{
-        text-decoration: none;
-        color: white;
-    }
 }
 
 .nav-btn:hover{
-    background-color: v.$dark-green2;
+    background-color: v.$green;
 }
 
 .nav-bar ul {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 2.5rem;
 
     li {
         font-size: 1.1rem;
@@ -53,10 +49,19 @@ header {
 
         a {
             text-decoration: none;
-            color: v.$dark-grey;
+            color: black;
             font-weight: 600;
+            transition: all .3s ease-in;
+        }
+
+        a:hover{
+            color: v.$light-grey;
         }
     }
+}
+
+.dark-mode-btn{
+    cursor:pointer;
 }
 
 a {
@@ -67,5 +72,30 @@ a {
         text-decoration: none;
     }
 }
+
+.open-menu,
+.close-menu {
+    display: none;
+    cursor: pointer;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    .dark-mode-btn{
+        
+        color: #1a1a1a;
+    }
+
+    h1{
+        color: #ffffff;
+    }
+}
+
+
+
+
+
 
 
