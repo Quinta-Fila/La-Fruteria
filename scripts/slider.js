@@ -1,5 +1,5 @@
 // Lógica correspondiente al slider de artículos más vendidos
-let swiperCards = new Swiper('.swiper', {
+swiperCards = new Swiper('.card-content', {
 
     loop: true,
     spaceBetween: 30,

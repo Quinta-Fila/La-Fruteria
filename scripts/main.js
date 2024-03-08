@@ -354,8 +354,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const elevator = new Elevator({
     element: document.getElementById("elevator"),
   });
+  elevator.elevate();
 });
 
-elevator.elevate();
+
+
 
 
