@@ -269,6 +269,7 @@
 
       <script src="./scripts/swiper-bundle.min.js"></script>
       <script src="./scripts/main.js"></script>
+      <script src="./scripts/dark-mode.js"></script>
       <script src="http//tholman.com/elevator.js/elevator.js"></script>
 </body>
 

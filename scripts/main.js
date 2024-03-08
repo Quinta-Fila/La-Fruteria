@@ -1,3 +1,4 @@
+/*
 window.onload = () => {
   // Variables
   const images = [
@@ -76,6 +77,8 @@ window.onload = () => {
   // Iniciar
   showImage();
 };
+
+*/
 
 /*!
  * Elevator.js
@@ -355,16 +358,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 elevator.elevate();
 
-// Función para cambiar a modo oscuro
-document.getElementById('dark-mode-toggle').addEventListener('click', function() {
-  document.body.classList.toggle('dark-mode');
-});
 
 // Lógica correspondiente al slider de artículos más vendidos
 let swiperCards; // Declarar la variable en un alcance superior
 
 document.addEventListener('DOMContentLoaded', function() {
-    swiperCards = new Swiper('.card-content', {
+    swiperCards = new Swiper('.swiper', {
       loop: true,
       spaceBetween: 30,
       grabCursor: true,
