@@ -39,7 +39,7 @@
 
   <section class="wrap-1 hero">
     <div class="hero-body">
-      <h1>Rincon Fruticola <br>La Quinta Fila</h1>
+      <h1>Rincón Fruticola <br>La Quinta Fila</h1>
       <p>
         Tenemos muchas frutas o eso creemos. A veces nos roban los ratones
         gigantes que hay debajo de la nevera pero que se le va a hacer. La verdad estoy rellenando esto para ocupar más, Lorem impsum estaría bien usarlo pero soy masoca.
@@ -48,7 +48,7 @@
   </section>
 
   <section class="wrap-2">
-    <h1>Tu tiendina de confianza para una alimentacion saludable</h1>
+    <h1>Tu tiendina de confianza para una alimentación saludable</h1>
     <div class="container">
       <article class="container-info">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" width="6rem" height="6rem">
@@ -65,7 +65,7 @@
         </svg>
         <div>
           <h2>Envío o Recogida</h2>
-          <p>Llegamos a cualquier sitio del sistema solar</p>
+          <p>Llegamos a cualquier sitio del Sistema Solar</p>
         </div>
       </article>
     </div>
