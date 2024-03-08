@@ -270,23 +270,6 @@
       <script src="./scripts/swiper-bundle.min.js"></script>
       <script src="./scripts/main.js"></script>
       <script src="http//tholman.com/elevator.js/elevator.js"></script>
-      <script>
-        const nav = document.getElementById("nav");
-        const openBtn = document.getElementById("open-nav");
-        const closeBtn = document.getElementById("close-nav");
-
-        const toggleMenu = () => {
-          nav.classList.toggle("visible");
-        };
-
-        window.addEventListener("scroll", () => {
-          const scrollPosition = window.scrollY;
-          if (scrollPosition > 0) nav.classList.remove("visible");
-        });
-
-        openBtn.addEventListener("click", toggleMenu);
-        closeBtn.addEventListener("click", toggleMenu);
-      </script>
 </body>
 
 </html>
