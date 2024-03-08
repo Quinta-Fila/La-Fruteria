@@ -1,30 +1,28 @@
 // Lógica correspondiente al slider de artículos más vendidos
-let swiperCards; // Declarar la variable en un alcance superior
+let swiperCards = new Swiper('.swiper', {
 
-document.addEventListener('DOMContentLoaded', function() {
-    swiperCards = new Swiper('.swiper', {
-      loop: true,
-      spaceBetween: 30,
-      grabCursor: true,
-    
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        dynamicBullets: true,
-      },
-    
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    
-      breakpoints: {
-          600: {
-              slidesPerView: 2,
-          },
-          968: {
-              slidesPerView: 3,
-          },
-        }
-    });
-});
+    loop: true,
+    spaceBetween: 30,
+    grabCursor: true,
+  
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
+    },
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints: {
+        600: {
+            slidesPerView: 2,
+        },
+        968: {
+            slidesPerView: 3,
+        },
+    }
+  
+  });

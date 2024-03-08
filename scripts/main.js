@@ -77,8 +77,8 @@ window.onload = () => {
   // Iniciar
   showImage();
 };
-
 */
+
 
 /*!
  * Elevator.js
