@@ -60,7 +60,7 @@ header {
     }
 }
 
-.dark-mode{
+.dark-mode-btn{
     cursor:pointer;
 }
 
@@ -83,6 +83,14 @@ a {
 body.dark-mode {
     background-color: #1a1a1a;
     color: #ffffff;
+    .dark-mode-btn{
+        
+        color: #1a1a1a;
+    }
+
+    h1{
+        color: #ffffff;
+    }
 }
 
 
