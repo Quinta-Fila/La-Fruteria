@@ -178,7 +178,7 @@
 
     <!--Slider de artículos más vendidos-->
     <section class="wrap-2">
-    <h1>Productos mas vendidos</h1>
+    <h1>Productos más vendidos</h1>
       <div class="swiper">
         <div class="card-content">
           <div class="swiper-wrapper">
@@ -268,6 +268,7 @@
       </footer>
 
       <script src="./scripts/swiper-bundle.min.js"></script>
+      <script src="./scripts/slider.js"></script>
       <script src="./scripts/main.js"></script>
       <script src="./scripts/dark-mode.js"></script>
       <script src="./scripts/hamburguer.js"></script>
